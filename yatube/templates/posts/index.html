@@ -5,6 +5,8 @@
 {% block content %}
 <div class="container py-5">
   <h1>Последние обновления на сайте</h1>
-  {% include 'includes/posts_head.html' with link=True %}
+  {% for post in posts %}
+    {% include 'includes/posts_head.html' with link=True %}
+  {% endfor %}
 </div>
 {% endblock %}

@@ -6,6 +6,8 @@
 <div class="container py=5">
   <h1>{{ group }}</h1>
   <h5>{{ group.description }}</h5>
-  {% include 'includes/posts_head.html' %}
+  {% for post in posts %}
+    {% include 'includes/posts_head.html' %}
+  {% endfor %}
 </div>
 {% endblock %}

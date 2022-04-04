@@ -13,7 +13,7 @@ def index(request):
 
 def group_posts(request, slug):
     group = get_object_or_404(Group, slug=slug)
-    posts = Post.objects.all()[:settings.MAX_PAGE_AMOUNT]
+    posts = group.posts.all()[:settings.MAX_PAGE_AMOUNT]
     context = {
         'group': group,
         'posts': posts,

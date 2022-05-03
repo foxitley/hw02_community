@@ -1,3 +1,3 @@
-# backend_community_homework
+Учебный проект
 
-[![CI](https://github.com/yandex-praktikum/hw02_community/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw02_community/actions/workflows/python-app.yml)
+Данный проект создан в процессе изучения Django 
